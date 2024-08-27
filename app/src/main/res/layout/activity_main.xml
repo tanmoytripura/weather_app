@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71C5EC"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/weather_bg"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="WEATHER APP"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="270dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="#CE6BDF"
+        android:hint="Enter City"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cityName"
+        android:layout_marginTop="30dp"
+        android:text="Search"
+        android:textSize="20sp"
+        android:background="#7A57BA"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/search"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="#D870EA"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+</RelativeLayout>
